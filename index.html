@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MoodOwn | Angela Sun</title>
+<meta name="description" content="MoodOwn: an interactive vision statement by Angela Sun. Three proposed AI-native products for human connection, care and professional support, and a two-year plan to learn how to build them.">
+<meta name="theme-color" content="#cfc6e6">
+<meta property="og:type" content="website">
+<meta property="og:title" content="MoodOwn">
+<meta property="og:description" content="Mood down or MoodOwn. Let's find the way together. An interactive vision statement by Angela Sun.">
+<meta property="og:image" content="/images/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&family=Schibsted+Grotesk:wght@400..700&family=Noto+Serif+SC:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css?v=202611130216">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="nav-name" href="#top">MoodOwn</a>
+    <div class="nav-right"><nav aria-label="Chapters">
+      <ol id="navlist">
+        <li><a href="#question">01<span>The question</span></a></li>
+        <li><a href="#problems">02<span>Three problems</span></a></li>
+        <li><a href="#concepts">03<span>The products</span></a></li>
+        <li><a href="#architecture">04<span>Under the surface</span></a></li>
+        <li><a href="#skills">05<span>Know and need</span></a></li>
+        <li><a href="#roadmap">06<span>Two years</span></a></li>
+        <li><a href="#returning">07<span>Returning</span></a></li>
+      </ol>
+    </nav><button type="button" class="lang" id="langBtn" data-noi18n aria-label="切换到中文">中文</button></div>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" id="heroSec">
+  <canvas class="scene" id="heroScene" aria-hidden="true"></canvas>
+  <canvas class="scene fx" id="heroFx" aria-hidden="true"></canvas>
+  <div class="wrap hero-in">
+    <h1 aria-label="MoodOwn"><span class="w1">Mood</span><span class="w2">Own</span></h1>
+    <p class="pun">Mood down or MoodOwn. Let's find the way together.</p>
+    <p class="tag">AI-native products for human connection, care, and professional support. Three proposed products, and a two-year plan to learn how to build them properly.</p>
+    <div class="claims">
+      <a href="#problems"><strong>I know what I want to build.</strong><small>Three problems, chapter 02</small></a>
+      <a href="#skills"><strong>I understand what I can do today.</strong><small>What I know and need, chapter 05</small></a>
+      <a href="#roadmap"><strong>And I know what I need to learn next.</strong><small>The next two years, chapter 06</small></a>
+    </div>
+  </div>
+</section>
+<div class="wrap byline">
+  <span><b>Angela Sun</b></span>
+  <span>An interactive vision statement, written as I return to computer science</span>
+</div>
+
+<!-- 01 -->
+<section class="chapter" id="question">
+  <div class="wrap">
+    <div class="ch-head">
+      <div class="ch-num"><small>Chapter</small>01</div>
+      <div><h2>The question that stayed with me</h2></div>
+    </div>
+    <div class="body"><div class="main">
+      <p class="bigq">How can we better understand and help the human mind?</p>
+      <p class="muted" style="max-width:60ch;margin-bottom:28px">This question has stayed with me since adolescence. Every stage of my education and work has been another way of asking it. Select a stage to see what it gave me.</p>
+      <div class="lenses" id="lenses" role="group" aria-label="Stages of my background"></div>
+      <div class="lens-panel" id="lensPanel" aria-live="polite"></div>
+
+      <div class="lesson">
+        <blockquote>Being able to generate working code is not the same as understanding, maintaining, testing, and engineering a reliable system.</blockquote>
+        <div class="notlist">
+          <h4>What I do not claim to be</h4>
+          <ul>
+            <li>An experienced production AI engineer</li>
+            <li>A machine learning researcher</li>
+            <li>A licensed therapist</li>
+            <li>A clinical AI developer</li>
+          </ul>
+          <p style="margin-top:10px">My goal is to become technically capable of building, evaluating, maintaining and eventually commercializing reliable AI systems.</p>
+        </div>
+      </div>
+    </div></div>
+  </div>
+</section>
+
+<!-- 02 -->
+<section class="chapter" id="problems">
+  <div class="wrap">
+    <div class="ch-head">
+      <div class="ch-num"><small>Chapter</small>02</div>
+      <div>
+        <h2>Three problems I want to solve</h2>
+        <p>MoodOwn is a proposed ecosystem of three related products. Each could stand on its own, with its own audience, workflow, commercial strategy and technical difficulty. None of them exists yet. They are concepts I intend to prototype, test and develop.</p>
+      </div>
+    </div>
+    <div class="body"><div class="main">
+      <p class="creed">Technology should support human relationships and professional care. It should never stand in for them.</p>
+      <p class="muted" style="margin-bottom:36px;max-width:60ch">That principle is shared. Almost everything else differs from one product to the next.</p>
+
+      <article class="prob" data-p="fam">
+        <div>
+          <h3>Family<small>Neurodivergent and mental health family care</small></h3>
+          <p class="who"><b>Who it might serve</b>Families navigating neurodevelopmental or psychiatric conditions; child and adolescent behavioral health practices; family therapy clinics. A possible entry market is culturally responsive support for East Asian families, without assuming those families are alike.</p>
+        </div>
+        <div class="txt">
+          <p class="lead">A child with ADHD struggles with executive functioning. A parent sees laziness or defiance. The same argument repeats until people stop talking.</p>
+          <p>Communication difficulties like these do not mean the family caused the condition. They do wear a family down. One parent carries most of the caregiving, another underestimates their own part, and a child who feels misunderstood goes quiet.</p>
+          <p style="margin-top:12px">I picture a condition-aware space where each person can reflect privately, understand what the condition does and does not explain, practice a harder conversation, and share only what they choose. ADHD, autism and mood disorders are different conditions and would need different support.</p>
+        </div>
+      </article>
+
+      <article class="prob" data-p="rel">
+        <div>
+          <h3>Relationships<small>Reflection and care navigation before, and between, therapy</small></h3>
+          <p class="who"><b>Who it might serve</b>Individuals and couples seeking relationship support; marriage and family therapists; counseling practices and family therapy clinics.</p>
+        </div>
+        <div class="txt">
+          <p class="lead">Many people live with a relationship problem for a long time before they are ready to ask a professional for help.</p>
+          <p>Someone considering divorce. A teenager who feels alone inside their own family. A couple who cannot talk without escalating. Relatives who disagree about whether therapy is needed at all. These people may not want to confide in friends, and may not know whether they need a counselor, a marriage and family therapist, or someone else. A general-purpose chatbot can be kind, but it has no verified clinical qualifications and no dependable route to a professional.</p>
+          <p class="q">How can an AI agent help people reflect and reach support without taking control of deeply personal decisions?</p>
+        </div>
+      </article>
+
+      <article class="prob" data-p="pro">
+        <div>
+          <h3>Providers<small>Personal care and professional support for healthcare workers</small></h3>
+          <p class="who"><b>Who it might serve</b>Physicians, nurses, mental health professionals, clinical researchers, residents and trainees; and, as sponsors, healthcare institutions, professional associations and benefits providers.</p>
+        </div>
+        <div class="txt">
+          <p class="lead">The people who care for others deserve care that understands their professional world.</p>
+          <p>This is the product closest to me, and it is not a meditation or burnout app. Clinical expertise does not guarantee access to the right support when a clinician's own life becomes hard. I see four distinct situations.</p>
+          <ul class="cases">
+            <li><b>Repeated clinical exposure.</b> Patient after patient whose story resembles a painful part of your own. Each case is manageable. The accumulation may not be.</li>
+            <li><b>Personal experience and boundaries.</b> Your history makes you more attuned to a patient, and stirs memories. Patients cannot be asked to care for you in return, so you need somewhere separate.</li>
+            <li><b>Clinicians as patients.</b> Serious illness, postpartum psychiatric symptoms, bereavement, family crisis. Medical knowledge is no immunity.</li>
+            <li><b>Specialized personal therapy.</b> A therapist with strong skills who also understands supervision, boundaries, ethics and the realities of clinical work. Supervision and personal psychotherapy are different services.</li>
+          </ul>
+        </div>
+      </article>
+    </div></div>
+  </div>
+</section>
+
+<!-- 03 -->
+<section class="chapter" id="concepts">
+  <div class="wrap">
+    <div class="ch-head">
+      <div class="ch-num"><small>Chapter</small>03</div>
+      <div>
+        <h2>What these products might feel like</h2>
+        <p>Fifteen concept screens, five per product. Choose a product, then a screen. The controls inside each phone respond, following a short script.</p>
+      </div>
+    </div>
+    <div class="body"><div class="main">
+      <p class="slogan">Mood down? Make it MoodOwn.</p>
+      <div class="switch" id="prodSwitch" role="group" aria-label="Product"></div>
+      <div class="stage" id="stage" data-p="fam">
+        <div>
+          <p class="stage-title" id="stageTitle"></p>
+          <p class="stage-sub" id="stageSub"></p>
+          <ol class="screens" id="screenList"></ol>
+        </div>
+        <div class="pedestal" id="pedestal"><canvas class="scene" id="fieldScene" aria-hidden="true"></canvas><div class="phone"><div class="screen fam" id="screen" data-st="a"></div></div></div>
+        <div class="aside">
+          <h4>Personality</h4>
+          <p id="persona"></p>
+          <div class="under">
+            <h4>What this screen would need underneath</h4>
+            <p id="needText"></p>
+            <a class="linkbtn" href="#architecture" id="needBtn">Show it in the architecture</a>
+          </div>
+          <p class="simnote">Proposed and simulated. No AI model is connected, every person and scenario is invented, and nothing here offers therapy, diagnosis or medical advice.</p>
+        </div>
+      </div>
+    </div></div>
+  </div>
+</section>
+
+<!-- 04 -->
+<section class="chapter" id="architecture">
+  <div class="wrap">
+    <div class="ch-head">
+      <div class="ch-num"><small>Chapter</small>04</div>
+      <div>
+        <h2>Under the surface</h2>
+        <p>Three separate products can stand on the same engineering foundations while keeping their own safety rules, permissions and clinical considerations. Choose a product to see its rules, and a foundation to see how each product would use it.</p>
+      </div>
+    </div>
+    <div class="body"><div class="main">
+      <div class="arch" id="arch" data-p="fam">
+        <div>
+          <p class="tier-label">Three products, three sets of agents</p>
+          <div class="surfaces" id="surfaces"></div>
+          <div class="policy" id="policy" aria-live="polite"></div>
+          <div class="drop" aria-hidden="true"><i></i><i></i><i></i></div>
+          <p class="tier-label">Shared engineering foundations</p>
+          <div class="found"><div class="lanes" id="lanes"></div></div>
+          <p class="archnote">I am not proposing one agent that does everything. Each product would have narrowly scoped agents with defined steps and stopping points. What they share is the plumbing: how state is stored, how consent is recorded, how information is retrieved, and how behavior is tested.</p>
+        </div>
+        <aside class="fdetail" id="fdetail" aria-live="polite"></aside>
+      </div>
+    </div></div>
+  </div>
+</section>
+
+<!-- 05 -->
+<section class="chapter" id="skills">
+  <div class="wrap">
+    <div class="ch-head">
+      <div class="ch-num"><small>Chapter</small>05</div>
+      <div>
+        <h2>What I know, and what I need to learn</h2>
+        <p>Each product challenge sits between something I can already do and something I cannot do yet. Every row links to the phase of the roadmap where I plan to close that gap.</p>
+      </div>
+    </div>
+    <div class="body"><div class="main">
+      <div class="legend"><span><i class="f"></i>A foundation I have today</span><span><i></i>Knowledge I still need</span></div>
+      <div class="mx" id="mx">
+        <div class="mx-head"><span>What I have</span><span>The product challenge</span><span>What I need to learn</span></div>
+      </div>
+      <div class="twocol">
+        <div><h3>My strengths today</h3><p>Understanding people, conducting rigorous research, defining product problems, structuring hypotheses, and developing early prototypes.</p></div>
+        <div><h3>My engineering objectives</h3><p>Building production-quality AI systems, understanding their architecture, writing maintainable code, evaluating model behavior, and operating secure cloud services.</p></div>
+      </div>
+      <p class="coda">I am not starting from zero. I return with earlier CS training, rigorous science coursework and independent research behind me, and I want to build on that foundation.</p>
+    </div></div>
+  </div>
+</section>
+
+<!-- 06 -->
+<section class="chapter" id="roadmap">
+  <div class="wrap">
+    <div class="ch-head">
+      <div class="ch-num"><small>Chapter</small>06</div>
+      <div>
+        <h2>The next two years</h2>
+        <p>Four phases of about six months. Each pairs what I plan to study with a more demanding version of MoodOwn, and each is organized around one engineering question. The technologies are learning choices I propose, not skills I already have.</p>
+      </div>
+    </div>
+    <div class="body"><div class="main">
+      <div class="track" id="track" role="group" aria-label="Roadmap phases"></div>
+      <div class="phase" id="phase" aria-live="polite"></div>
+
+      <div class="biz">
+        <h3>If the work holds up, a business</h3>
+        <p>Over time I hope MoodOwn can become a sustainable portfolio of specialized products. That is a direction, not a claim of product-market fit. There are no customers, no revenue and no clinical results to report, so I have not invented any.</p>
+        <ol class="ladder">
+          <li class="now">Unvalidated opportunity<small>All three products are here today</small></li>
+          <li>Prototype<small>Phases one to three</small></li>
+          <li>Customer discovery<small>Interviews with people who might pay</small></li>
+          <li>MVP<small>One product, end of phase four</small></li>
+          <li>Commercial validation<small>Beyond the two years</small></li>
+          <li>Potential scale<small>Only if the evidence supports it</small></li>
+        </ol>
+        <ul class="models">
+          <li><b>Family</b><span>Possible B2C and B2B2C models involving families, specialty providers and behavioral healthcare practices.</span></li>
+          <li><b>Relationships</b><span>Possible consumer subscriptions for clearly nonclinical support, subscription tools for therapists, practice-level licensing, and care navigation partnerships.</span></li>
+          <li><b>Providers</b><span>Possible individual professional subscriptions, employer-sponsored benefits, healthcare organization licensing and professional association partnerships. Employer funding must never mean employer access to anyone's private conversations.</span></li>
+        </ul>
+      </div>
+    </div></div>
+  </div>
+</section>
+
+<!-- 07 -->
+<section class="chapter" id="returning">
+  <div class="wrap">
+    <div class="ch-head">
+      <div class="ch-num"><small>Chapter</small>07</div>
+      <div><h2>Why I am returning to computer science</h2></div>
+    </div>
+    <div class="body"><div class="main">
+      <div class="close">
+        <p>During my first year studying computer science, I realized that although I enjoyed coding, I still didn't know what I wanted to create with it. So I returned to the question that had started it all.</p>
+        <p>Clinical research and my own projects changed how I think about the relationship between psychology and technology. Psychology gives me a sense of purpose, while computer science gives me the skills, confidence, and joy of bringing ideas to life. For me, neither is complete without the other.</p>
+        <p>I don't just want to use AI to build products. I want to understand the technology itself and work alongside AI to explore its possibilities and boundaries, including when decisions should be left to humans.</p>
+        <p>This time, as I return to computer science, I not only know what I want to create, but also have the confidence that comes from my earlier CS training, rigorous science coursework, and independent research experience. I want to build on that foundation by deepening my knowledge of algorithms, systems design, software architecture, and AI engineering, and to become someone who can help design and build the systems behind the technologies I use.</p>
+        <p class="last">For a long time, I thought I was searching for the right direction. Now I realize I was also discovering what I have to offer.</p>
+      </div>
+      </div></div>
+  </div>
+</section>
+<section class="finale" id="finSec">
+  <canvas class="scene" id="duskScene" aria-hidden="true"></canvas>
+  <canvas class="scene fx" id="duskFx" aria-hidden="true"></canvas>
+  <div class="wrap fin-in">
+    <p>I know what I want to build.</p>
+    <p>I understand what I can do today.</p>
+    <p>And I know what I need to learn next.</p>
+    <p class="fin-sub">Mood down or MoodOwn: same letters, different direction.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>MoodOwn is an educational and entrepreneurial concept by Angela Sun. The application screens are proposed and simulated, and every scenario and person shown in them is synthetic. This site does not provide therapy, diagnosis or medical advice, and makes no claim of clinical validation or regulatory compliance.</p>
+    <p>Any clinical deployment would require expert oversight, privacy and regulatory review, safety validation and institutional partnerships. Two years is not enough to establish clinical efficacy.</p>
+  </div>
+</footer>
+
+<script src="/js/main.js?v=202611130216"></script>
+</body>
+</html>
